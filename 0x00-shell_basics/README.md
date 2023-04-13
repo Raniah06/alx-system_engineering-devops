@@ -10,3 +10,6 @@
 9-removing directory.
 10-back to previous
 11-list for more than one thing
+12-file type script.
+13-symbolic link script.
+14-coping html files.
