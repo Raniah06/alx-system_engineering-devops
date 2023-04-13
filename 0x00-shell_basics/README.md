@@ -6,3 +6,5 @@
 5-list all includes hidden filles and user and group IDs.
 6-make my_first_directory directory.
 7-moving file.
+8-removing file.
+
