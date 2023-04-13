@@ -7,4 +7,4 @@
 6-make my_first_directory directory.
 7-moving file.
 8-removing file.
-
+9-removing directory.
