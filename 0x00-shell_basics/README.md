@@ -4,3 +4,4 @@
 3-list in long format.
 4-list in long format even hidden files.
 5-list all includes hidden filles and user and group IDs.
+6-make my_first_directory directory.
