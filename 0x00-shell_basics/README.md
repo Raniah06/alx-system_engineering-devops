@@ -3,3 +3,4 @@
 2-changes the working directory to the user’s home directory.
 3-list in long format.
 4-list in long format even hidden files.
+5-list all includes hidden filles and user and group IDs.
