@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -mn -la -d */ .
+ls -mn -a -d */ .
