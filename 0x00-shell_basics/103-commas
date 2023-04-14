@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -mn -a -d */ .
+ls -ampx
