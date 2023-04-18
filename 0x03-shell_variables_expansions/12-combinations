@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}-{a..z} -oo
+eecho {a..z}{a..z} | tr ' oo' '\n' | tr ' ' '\n' 
