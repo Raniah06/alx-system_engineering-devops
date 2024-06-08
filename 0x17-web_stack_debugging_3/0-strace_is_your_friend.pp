@@ -1,15 +1,17 @@
 # 0-strace_is_your_friend.pp
-# This Puppet manifest fixes directory permissions and notifies Apache.
+# This Puppet script fixes the missing index.php file and restarts Apache
 
-exec { 'fix-permissions':
-  command => '/bin/chmod -R 755 /var/www/html',
-  onlyif  => '/usr/bin/find /var/www/html -type d -exec /usr/bin/test ! -perm 755 \; -print | grep .',
-  notify  => Service['apache2'],
+file { '/var/www/html/index.php':
+  ensure  => file,
+  content => '<?php echo "Hello, Holberton!"; ?>',
+  owner   => 'www-data',
+  group   => 'www-data',
+  mode    => '0644',
 }
 
 service { 'apache2':
-  ensure    => running,
-  enable    => true,
-  subscribe => Exec['fix-permissions'],
+  ensure => running,
+  enable => true,
+  require => File['/var/www/html/index.php'],
 }
 
